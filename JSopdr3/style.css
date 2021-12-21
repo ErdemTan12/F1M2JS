@@ -1,0 +1,37 @@
+#container {
+    background-color: cadetblue;
+    margin: 0 auto;
+    width: 60%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+    font-size: 36px;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+
+nav {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    font-size: 28px;
+    padding: 10px;
+    color: white;
+    background-color: darkslategray;
+    width: 100px;
+}
