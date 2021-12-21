@@ -1,0 +1,18 @@
+body{
+    background-color: aqua;
+}
+
+
+.choice{
+    width: 12em;
+    height: 2em;
+    padding: 10px;
+    border: 2px black solid;
+    margin: 20px;
+}
+
+.choice:hover{
+    cursor:pointer;
+    background-color: mediumvioletred;
+    color:orange;
+}

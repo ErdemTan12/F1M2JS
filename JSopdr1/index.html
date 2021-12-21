@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change colors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Change Colors</h1>
+    <p class="choice" id="achtergrondRood">achtergrond Rood</p>
+    <p class="choice" id="achtergrondGroen">achtergrond Groen</p>
+    <p class="choice" id="achtergrondBlauw">achtergrond Blauw</p>
+    <p class="choice" id="voorgrondCyaan">voorgrond Cyaan</p>
+    <p class="choice" id="voorgrondGeel">voorgrond Geel</p>
+    <p class="choice" id="voorgrondMagenta">voorgrond Magenta</p>
+
+    <script>
+        const achtergrondRood = document.getElementById('achtergrondRood');
+        const achtergrondGroen = document.getElementById('achtergrondGroen');
+        const achtergrondBlauw = document.getElementById('achtergrondBlauw');
+        const voorgrondCyaan = document.getElementById('voorgrondCyaan');
+        const voorgrondGeel = document.getElementById('voorgrondGeel');
+        const voorgrondMagenta = document.getElementById('voorgrondMagenta');
+
+        achtergrondRood.addEventListener('click',maakAchtergrondRood);
+        achtergrondGroen.addEventListener('click',maakAchtergrondGroen);
+        achtergrondBlauw.addEventListener('click',maakAchtergrondBlauw);
+        voorgrondCyaan.addEventListener('click',maakVoorgrondCyaan);
+        voorgrondGeel.addEventListener('click',maakVoorgrondGeel);
+        voorgrondMagenta.addEventListener('click',maakVoorgrondMagenta);
+
+        function maakAchtergrondRood(){
+            document.body.style.backgroundColor = "red";
+        }
+        
+        function maakAchtergrondGroen(){
+            document.body.style.backgroundColor = "green";
+        }
+
+        function maakAchtergrondBlauw(){
+            document.body.style.backgroundColor = "blue";
+        }
+
+        function maakVoorgrondCyaan(){
+            document.body.style.color = "cyan";
+        }
+
+        function maakVoorgrondGeel(){
+            document.body.style.color = "yellow";
+        }
+
+        function maakVoorgrondMagenta(){
+            document.body.style.color = "magenta";
+        }
+
+    </script>
+
+</body>
+</html>
