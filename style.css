@@ -1,18 +1,37 @@
-body{
-    background-color: aqua;
+body {
+    background-color: blanchedalmond;
 }
 
-
-.choice{
-    width: 12em;
-    height: 2em;
+#koelkast {
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     padding: 10px;
-    border: 2px black solid;
-    margin: 20px;
 }
 
-.choice:hover{
-    cursor:pointer;
-    background-color: mediumvioletred;
-    color:orange;
+section {
+    border: 2px solid #000000;
+    padding: 10px;
+    min-height: 200px;
+}
+
+h2 {
+    margin: 0 0 10px 0; /* top right bottom left */
+}
+
+.rood {
+    color: red;
+}
+
+.groen {
+    color: green;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: lightskyblue;
+    color: navy;
+    font-size: 18px;
+    border: 2px solid black;
 }

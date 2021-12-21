@@ -4,58 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>change colors</title>
+    <title>Les 2 - Boodschappen</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Change Colors</h1>
-    <p class="choice" id="achtergrondRood">achtergrond Rood</p>
-    <p class="choice" id="achtergrondGroen">achtergrond Groen</p>
-    <p class="choice" id="achtergrondBlauw">achtergrond Blauw</p>
-    <p class="choice" id="voorgrondCyaan">voorgrond Cyaan</p>
-    <p class="choice" id="voorgrondGeel">voorgrond Geel</p>
-    <p class="choice" id="voorgrondMagenta">voorgrond Magenta</p>
+    <h1>Boodschappen sorteren</h1>
 
-    <script>
-        const achtergrondRood = document.getElementById('achtergrondRood');
-        const achtergrondGroen = document.getElementById('achtergrondGroen');
-        const achtergrondBlauw = document.getElementById('achtergrondBlauw');
-        const voorgrondCyaan = document.getElementById('voorgrondCyaan');
-        const voorgrondGeel = document.getElementById('voorgrondGeel');
-        const voorgrondMagenta = document.getElementById('voorgrondMagenta');
+    <div id="boodschappen">
+        <button onclick="zetInFruitLa('Appel')">Appel</button>
+        <button onclick="zetInGroenteLa('Sla')">Sla</button>
+        <button onclick="zetInFruitLa('Banaan')">Banaan</button>
+        <button onclick="zetInFruitLa('Kiwi')">Kiwi</button>
+        <button onclick="zetInGroenteLa('Broccoli')">Broccoli</button>
+        <button onclick="zetInGroenteLa('Spruitjes')">Spruitjes</button>
+    </div>
 
-        achtergrondRood.addEventListener('click',maakAchtergrondRood);
-        achtergrondGroen.addEventListener('click',maakAchtergrondGroen);
-        achtergrondBlauw.addEventListener('click',maakAchtergrondBlauw);
-        voorgrondCyaan.addEventListener('click',maakVoorgrondCyaan);
-        voorgrondGeel.addEventListener('click',maakVoorgrondGeel);
-        voorgrondMagenta.addEventListener('click',maakVoorgrondMagenta);
+    <div id="koelkast">
+        <section id="groente">
+            <h2>Groente</h2>
+        </section>
+        <section id="fruit">
+            <h2>Fruit</h2>
+        </section>
+    </div>
 
-        function maakAchtergrondRood(){
-            document.body.style.backgroundColor = "red";
-        }
-        
-        function maakAchtergrondGroen(){
-            document.body.style.backgroundColor = "green";
-        }
-
-        function maakAchtergrondBlauw(){
-            document.body.style.backgroundColor = "blue";
-        }
-
-        function maakVoorgrondCyaan(){
-            document.body.style.color = "cyan";
-        }
-
-        function maakVoorgrondGeel(){
-            document.body.style.color = "yellow";
-        }
-
-        function maakVoorgrondMagenta(){
-            document.body.style.color = "magenta";
-        }
-
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
