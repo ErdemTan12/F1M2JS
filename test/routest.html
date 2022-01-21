@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIJKSMUSEUM | Interactieve Route</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <a href="index.html" class="logo">RIJKSMUSEUM</a>
+    <div class="nav-links" id="navLinks">
+    <div id="container">
+        <img id="myImage" src="img/0.jpg" height="600" alt="foto silver bullet" />
+        <div id="myInteraction">
+           <div id="myTitle">hier komt de titel</div>
+           <input autofocus autocomplete="off" type="text" id="myInput"><button onclick="getInput()">voer in</button>
+          <h3>Kies welke richting je op wilt:</h3>
+          <nav>
+              <button id="knopNoord" onclick="goDirection('noord')">Noord</button>
+              <button id="knopWest" onclick="goDirection('west')">West</button><button id="knopOost" onclick="goDirection('oost')">Oost</button>
+              <button id="knopZuid" onclick="goDirection('zuid')">Zuid</button>
+          </nav>
+          
+          <img src="img/plattegrond.jpg" id="mapImage" />  
+
+    </div>
+   <!--Footer-->
+   <footer>
+    <!--info-->
+    <div class="footer-description">
+    <div class="footer-column">
+      <h3>Locatie en Info</h3>
+      <p>Museumstraat 1<br>
+      1071 XX Amsterdam<br>
+      Postbus 74888</p>
+     <p><strong>Phone:</strong> 020 674 7000</p>
+     <p><strong>Email:</strong> info@rijksmuseum.nl</p>
+    </div>
+    <div class="footer-column">
+    <h3>BEZOEKERSINFORMATIE</h3>
+     <p>Tijdelijk Gesloten<p>
+
+    </div>
+    </div>
+     <!--social media icon-->
+ <div class="icons">
+   <i class="fa fa-facebook" style="font-size:24px"></i>
+   <i class="fa fa-twitter" style="font-size:24px"></i>
+   <i class="fa fa-instagram" style="font-size:24px"></i>
+  </div><!--icon-->
+
+
+    <script src="script2.js"></script>
+</body>
+</html>

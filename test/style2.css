@@ -1,0 +1,57 @@
+body {
+    background-color: grey;
+}
+
+#container {
+    display: grid;
+    background-color: aliceblue;
+    width: 900px;
+    height: 600px;
+    margin: 50px auto auto auto;
+    grid-template-columns: auto auto;
+    border: 2px gray inset;
+}
+
+#myInteraction {
+    padding: 10px;
+}
+
+#mapImage {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+nav button {
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+}
+
+#knopNoord, #knopZuid {
+    display: block;
+    width: 300px;
+}
+
+#knopWest, #knopOost {
+    display: inline-block;
+    width: 150px;
+}
+footer {
+    margin-top: 3rem;
+    background:#222831;
+
+}
+.footer-description {
+    margin-top: 4rem;
+    margin-left: 10px;
+    color: #c4c4c4;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-column {
+    flex-basis: 22%;
+    padding: 10px;
+    box-sizing: border-box; 
+}
